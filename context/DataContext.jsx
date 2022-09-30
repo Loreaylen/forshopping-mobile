@@ -2,7 +2,7 @@ import React, {createContext, useState} from 'react';
 
 export const AppContext = createContext();
 
-const DataContext = () => {
+const DataContext = ({children}) => {
 
   const [budget, setBudget] = useState(0),
         [name, setName] = useState("");
@@ -16,7 +16,7 @@ const DataContext = () => {
 
   return(
     <AppContext.Provider value={contextValue}>
-      
+      {children}
     </AppContext.Provider>
   )}
 
