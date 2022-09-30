@@ -10,7 +10,6 @@ const Home = () => {
       <TextInput placeholder={'Presupuesto'}/>
       <Button title='Comenzar'/>
     </View>
-  )
-}
+  )}
 
 export default Home;

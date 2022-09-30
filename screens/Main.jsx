@@ -1,13 +1,16 @@
 import React from 'react';
-import Constants from 'expo-constants'
-import Home from './Home.jsx'
+import Constants from 'expo-constants';
+import Calculator from '../screens/Calculator.jsx';
+import Home from './Home.jsx';
+import DataContext from '../context/DataContext.jsx';
 import {View, StyleSheet} from 'react-native';
 
 const Main = () => {
-
   return(
     <View style={styles.container}>
-      <Home/>
+      <DataContext>
+        <Calculator/>
+      </DataContext>
     </View>
   )
 }
